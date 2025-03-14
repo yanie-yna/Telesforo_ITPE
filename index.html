@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Dior</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            
+            <h2 class="logo">F<span>D</span></h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+                <div class="search-bar">
+                    <input type="text" placeholder=" Search...">
+                    <button type="submit" class="login">Login</button>
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+        </div>
+
+        <div class="container">
+            <label for="" class="icon-close"><i class="fa fa-times" aria-hidden="true"></i></label>
+
+            <div class="card">
+                <h3>Login</h3>
+                <form action="#">
+                    <div class="input-card">
+                        <span class="icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-card">
+                        <span class="icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                </form>
+            </div>
+        </div> 
+
+        <div class="main-section">
+            <h1 class="fdel">DIOR <span>BEAUTY</span></h1>
+            <p class="sen">"Christian Dior revolutionized the world of fashion and beauty, introducing elegance, sophistication, and 
+                innovation to cosmetics. Dior Beauty embodies luxury with its iconic lipsticks, radiant foundations, 
+                and timeless fragrances—each crafted to celebrate individuality and confidence.."</p>
+
+            <div class="btn">
+                <button><a href="products.html"> Shop Now <i class="fa fa-shopping-cart" aria-hidden="true"></i></a></button>
+                <button class="lrm"><a href="about.html">Learn More <i class="fa fa-info-circle" aria-hidden="true"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const btnPopup = document.querySelector('.login');
+        const iconClose = document.querySelector('.icon-close');
+
+        btnPopup.addEventListener('click', ()=> {
+            container.classList.add('active-popup');
+        });
+
+        iconClose.addEventListener('click', ()=> {
+            container.classList.remove('active-popup');
+        });
+    </script>
+     <div id="about">
+        <h1><span>About </span> Us</h1>
+            <div class="main2">
+            <h3> <span>Christian Dior </span>Lipstick</h3>
+            <img src="pic2.webp" alt="">
+                <div class="a1-content">
+                    <p>Welcome to the world of Christian Dior Lipstick, where beauty finds its ultimate expression. We are a passionate team of creators <br> 
+                        dedicated to bringing sophistication, luxury, and confidence to every individual through our iconic lipsticks. <br><br>
+                        Christian Dior Lipstick was inspired by a vision to craft a beauty product that not only enhances but empowers. What started <br>
+                        as a commitment to high-quality makeup has evolved into a legacy of timeless elegance and innovation. Known for its vibrant 
+                        <br>shades, rich formulas, and exquisite design, Christian Dior Lipstick continues to redefine beauty standards worldwide. <br><br> 
+                        At Christian Dior, we are devoted to creating lipsticks that are as unique as you are. Each shade is meticulously crafted <br>
+                        with precision and care, offering a luxurious experience that goes beyond makeup. We source only the finest ingredients <br>
+                        to ensure exceptional quality, long-lasting wear, and a flawless finish. <br><br>
+                        From bold and daring colors to soft and subtle hues, we offer a wide 
+                        <br> range of lipsticks for every mood and occasion, including:  <br>
+                        Everyday Classic Shades <br>
+                        Statement-Making Reds  <br> Romantic Nude Tones   <br> CSeasonal Limited Editions  
+                            <br> Hydrating and Matte Finishes 
+                            </p> 
+                </div>
+            </div>
+    </div>
+    <div id="products">
+        <h1>Our <span>Products</span></h1>
+        
+        <div class="flowers">
+            <div class="row">
+                <img src="pic3.webp" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>ROUGE DIOR</h3>
+                    <p>₱ 900</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic4.webp" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>Rouge Dior Forever Lipstick</h3>
+                    <p>₱ 2, 800</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic8.webp" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR ADDICT LIPSTICK </h3>
+                    <p>₱ 780</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic7.jpg" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR RED</h3>
+                    <p>₱ 1,200</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic9.jpg" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR NUDE</h3>
+                    <p>₱ 700</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic10.jpg" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR PINK</h3>
+                    <p>₱ 600</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic11.jpg" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR SUNSET</h3>
+                    <p>₱ 840</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic12.webp" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR LIPBALM</h3>
+                    <p>₱ 700</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic13.jpg" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR LIPBALM PURPLE</h3>
+                    <p>₱ 790</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="pic14.avif" alt="">
+                <div class="heart-icon">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                </div>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="flower-price">
+                    <h3>CHRISTIAN DIOR LIPBALM YELLOW</h3>
+                    <p>₱ 930</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="contacts">
+        <div class="container2">
+            <div class="cntct-item">
+                <div class="contact">
+                    <div class="ftext">Get in Touch</div>
+                    <img src="pic17.jpg" alt="" class="cntct-img">
+                    <div class="social-links">
+                        <span class="stext">Connect with us:</span>
+                        <ul class="social-media">
+                            <li><a href="https://www.facebook.com/jenyan.telesforo"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/Dior?ref_src=twsrc%5Etfw"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/diorbeauty?igsh=ZHhma2hxc3d2OTBo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://t.co/AC6M49zMQM"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="send-form">
+                    <h4 class="ttext">Contact Us</h4>
+                    <form action="">
+                        <div class="inputbox">
+                            <input type="text" class="input" required>
+                            <label for="">Name</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="tel" class="input" required>
+                            <label for="">Phone</label>
+                        </div>
+                        <div class="inputbox">
+                            <textarea name="" class="input" required id="message" cols="30" rows="10"></textarea>
+                            <label for="">Message</label>
+                        </div>
+                        <input type="submit" class="btn-send" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
